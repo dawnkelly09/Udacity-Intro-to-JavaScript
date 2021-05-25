@@ -1,0 +1,42 @@
+Launch Countdown exercise
+
+var time = 60
+
+while (time >=0){
+
+//Orbiter transfers from ground to internal power (T-50 seconds)
+    if (time === 50){
+    console.log("Orbiter transfers from ground to internal power");
+}
+
+//Ground launch sequencer is go for auto sequence start (T-31 seconds)
+    else if (time === 31){
+    console.log("Ground launch sequencer is go for auto sequence start");
+}
+
+//Activate launch pad sound suppression system (T-16 seconds)
+    else if (time === 16){
+    console.log("Activate launch pad sound suppression system");
+}
+
+//Activate main engine hydrogen burnoff system (T-10 seconds)
+    else if (time === 10){
+    console.log("Activate main engine hydrogen burnoff system");
+}
+//Main engine start (T-6 seconds)
+    else if (time === 6){
+    console.log("Main engine start");
+}
+
+else if (time === 1){
+    console.log("T-"+time+" second");
+}
+//Solid rocket booster ignition and liftoff! (T-0 seconds)
+    else if (time === 0){
+    console.log("Solid rocket booster ignition and liftoff!");
+}
+    else {
+    console.log("T-"+time+" seconds");
+}
+time = (time-1);
+}
