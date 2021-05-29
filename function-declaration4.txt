@@ -1,0 +1,36 @@
+/*
+ * Programming Quiz: Laugh (5-4)
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `laugh`
+ * - Your code should include an anonymous function expression stored in the variable `laugh`
+ * - Your anonymous function expression should take one argument
+ * - Your anonymous function expression should return the correct number of `hahaha`\'s
+ */
+
+//Declare an empty string
+var noise = "";
+
+
+//store anonymous function in var laugh
+var laugh = function (num) {
+    
+//Iterate. What is the function to do?
+//Starting at x=0 and running until x is less than num, add 1 to x each time
+for (var x = 0 ; x < num ; x++) {
+    
+    //Noise now = empty string + "ha"; this will repeat until x !< num
+        noise = noise + "ha" ;  
+    }
+    
+    //All the multiples of "ha" now = "noise"; this adds the exclamation at the end
+    noise = noise +"!"; 
+    
+    //this returns the whole thing and stops the function running
+    return noise; 
+}
+
+//this console.log is calling var laugh (which calls the function)
+console.log(laugh(6));
